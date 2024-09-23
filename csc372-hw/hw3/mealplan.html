@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="mealplan.js" defer></script>
+    <title>Meal Plan Page</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="page-title">Campus Cravings</h1>
+        <nav class="page-navbar">
+            <a href="index.html">Home</a>
+            <a class="page-active" href="mealplan.html">Meal Plan</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="meal-plan-container">
+            <div class="recommended-meal-container">
+                <h2>Recommended Dishes</h2>
+                <ul>
+                    <li>Chocolate ice_cream - $2.25 <button data-name="Chocolate ice_cream" data-price="2.50"
+                            class="add-btn">Add</button></li>
+                    <li>Hot Dog - $1.80 <button data-name="Hot Dog" data-price="5.00" class="add-btn">Add</button></li>
+                    <li>Chocolate Milkshake - $3.90 <button data-name="Chocolate Milkshake" data-price="7.00"
+                            class="add-btn">Add</button></li>
+                    <li>Vegetable Samosa - $8.50 <button data-name="Vegetable Samosa" data-price="6.00"
+                            class="add-btn">Add</button></li>
+                    <li>Paneer Tikka Masala - $11.00 <button data-name="Paneer Tikka Masala" data-price="3.50"
+                            class="add-btn">Add</button></li>
+                    <li>Biryani - $12.50 <button data-name="Biryani" data-price="5.00" class="add-btn">Add</button></li>
+                    <li>Chicken Fajita Pita - $3.90 <button data-name="Chicken Fajita Pita" data-price="7.00"
+                            class="add-btn">Add</button></li>
+                    <li>Hummus platter - $8.50 <button data-name="Hummus platter" data-price="6.00"
+                            class="add-btn">Add</button></li>
+                    <li>Cheesecake - $11.00 <button data-name="Cheesecake" data-price="3.50"
+                            class="add-btn">Add</button></li>
+                </ul>
+            </div>
+
+            <div class="meal-cost-container">
+                <h2>Your Meal Plan</h2>
+                <ul id="meal-plan-list">
+                    <!-- Dynamically add li elements via script for each meal added with add & remove btns -->
+                </ul>
+                <p>Total: $<span id="total-meal-plan-cost">0.00</span></p>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

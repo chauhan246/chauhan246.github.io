@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<!-- 
+Name: Nehabahen Chauhan
+Date: 09.22.2024
+CSC 372-01
+Assignment 3
+
+This is index.html page for Assignment 3- Dine on Campus. This index.html
+is includes food and drinks recommendations on or close to UNCG campus. 
+it has three diffrents locations, and images of specialities and navbar and 
+tips and discounts. once you click on the image it will expand and show 
+discription and price. the meal paln button will take you to meal paln page. 
+This file also includes meal plan page, mealplan.html. This page includes list
+ of all specilities items. you can also go to home page from mealplan page.
+You can add to the item into your meal plan box. You can add and remove items. It
+also shows total. This file also include styles.css, mealplan.js, script.js, and 
+worksite.txt file. You will find all links of images in worksite.txt file. 
+ -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Home Page</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="page-title">Campus Cravings</h1>
+        <nav class="page-navbar">
+            <a class="page-active" href="#">Home</a>
+            <a href="mealplan.html">Meal Plan</a>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h2>Welcome Food Lovers!</h2>
+            <p>You have arrived at the right place for finding the best meal on campus. We've put together the most
+                loved and the most delicious dishes, snacks, and drinks for you. You have the options such as Hot Dogs
+                to eat on the go or the amazing Chicken Biryani available for dining in. These food & drink options
+                are affordable and are reasonably priced. Let's explore together and find the right meal plan that fits
+                your budget and satisfies your taste buds!</p>
+        </article>
+        <section>
+            <h3>Recommendations</h3>
+
+            <!-- First Address -->
+            <div>
+                <h4>Yum Yum Better Ice-cream</h4>
+                <p>1219 Spring Garden St, Greensboro, NC 27403 | Hours: 10:30am - 9:00pm Mon to Sat, Sunday: Closed</p>
+                <p><strong>Specialties:</strong></p>
+                <div class="food-est-container">
+                    <div class="image">
+                        <img src="images/ice1.jpg" alt="Chocolate Ice-cream" />
+                        <label>Chocolate ice-cream</label>
+                        <div class="dish-desc hide">
+                            <h4>Chocolate ice-cream in cone and cup</h4>
+                            <p>Price: $2.25</p>
+                        </div>
+                    </div>
+                    <div class="image">
+                        <img src="images/ice3.jpg" alt="Hot Dog" />
+                        <label>Hot Dog</label>
+                        <div class="dish-desc hide">
+                            <h4>Hot Dog with Mustard and ketchup</h4>
+                            <p>Price: $1.80</p>
+                        </div>
+                    </div>
+                    <div class="image">
+                        <img src="images/ice2.jpg" alt="Chocolate Milkshake" />
+                        <label>Chocolate Milkshake</label>
+                        <div class="dish-desc hide">
+                            <h4>Chocolate Milkshake with Chocolate whipped cream </h4>
+                            <p>Price: $3.90</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second Address -->
+            <div>
+                <h4>Raaz Indian Kitchen</h4>
+                <p> 427 Tate St, Greensboro, NC 27403 | Hours: 11:30am - 10:00pm Mon to Sat, Sunday: Closed</p>
+                <p><strong>Specialties:</strong></p>
+                <div class="food-est-container">
+                    <div class="image">
+                        <img src="images/raaz1.jpg" alt="Samosa" />
+                        <label>Vegetable Samosa</label>
+                        <div class="dish-desc hide">
+                            <h4>Appetizer, Crispy Vegetable stuffed Samosa</h4>
+                            <p>Price: $8.50</p>
+                        </div>
+                    </div>
+                    <div class="image">
+                        <img src="images/raaz2.jpg" alt="Tiika Masala" />
+                        <label>Paneer Tikka Masala</label>
+                        <div class="dish-desc hide">
+                            <h4>cooked cottage cheese cubes in rich butter gravy</h4>
+                            <p>Price: $11.00</p>
+                        </div>
+                    </div>
+                    <div class="image">
+                        <img src="images/raaz3.jpg" alt="Miso Soup" />
+                        <label>Biryani</label>
+                        <div class="dish-desc hide">
+                            <h4>Fragrant Basmati rice, with meat or veggies</h4>
+                            <p>Price: $12.50</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Third Address -->
+            <div>
+                <h4>Pita Delite UNCG</h4>
+                <p>EUC Building 507 Sterling St. Greensboro, NC 27412-5005| Hours: 11:30am - 6:00pm Mon to Fri, Saturday
+                    & Sunday:
+                    Closed</p>
+                <p><strong>Specialties:</strong></p>
+                <div class="food-est-container">
+                    <div class="image">
+                        <img src="images/deli1.jpg" alt="Pita_chicken" />
+                        <label>Chicken Fajita - Pita</label>
+                        <div class="dish-desc hide">
+                            <h4>Grilled chicken & onions or steak, cheese, lettuce, sauce.</h4>
+                            <p>Price: $9.50</p>
+                        </div>
+                    </div>
+                    <div class="image">
+                        <img src="images/deli2.jpg" alt="hummus_platter" />
+                        <label>Hummus Platter</label>
+                        <div class="dish-desc hide">
+                            <h4>Salad, fries, 1/2 pita, peppers, pickles, and olives</h4>
+                            <p>Price: $11.99</p>
+                        </div>
+                    </div>
+                    <div class="image">
+                        <img src="images/deli3.jpg" alt="Cheesecake" />
+                        <label>Cheesecake</label>
+                        <div class="dish-desc hide">
+                            <h4>Vanilla, Strawberry, Chocolate, Swirl Chocolate</h4>
+                            <p>Price: $5.99</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <aside>
+        <h2>Tips & Promotions
+            <img src="images/tag.png" alt="disc_img Image" class="dis_img">
+        </h2>
+        <p>Check out happy hour deals and discounts happening at these locations!</p>
+        </div>
+
+    </aside>
+</body>
+
+</html>
