@@ -48,7 +48,7 @@ function startTheGame() {
 // Start the round and have the computer auto select a throw
 function playRound(userThrowName) {
     const allComputerThrowNames = ['rock', 'paper', 'scissors'];
-    const allComputerThrowImages = ['/images/rock.png', '/images/paper.png', '/images/scissors.png'];
+    const allComputerThrowImages = ['images/rock.png', 'images/paper.png', 'images/scissors.png'];
     const computerThrowEle = id('computer-throw');
 
     let index = 0;
