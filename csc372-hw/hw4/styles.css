@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color: #a9d1c9;
+}
+
+.container {
+    text-align: center;
+    background-image: url('/images/backg.jpg');
+    padding: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-throws {
+    display: flex;
+    justify-content: center;
+}
+
+.throw {
+    width: 100px;
+    margin: 0 10px;
+    cursor: pointer;
+    border: 5px solid transparent;
+    transition: border 0.3s;
+}
+
+.throw.selected {
+    border: 5px solid rgb(14, 210, 142);
+}
+
+#computer-throw {
+    text-align: center;
+    width: 100px;
+}
+
+.comp-throw {
+    text-align: center;
+}
+
+
+.outcome {
+    margin-left: 20px;
+    font-size: 1.2em;
+    margin-top: -50px;
+}
+
+#play-button {
+    border: 2px solid rgb(28, 107, 86);
+    margin-left: 400px;
+    padding: 7px 15px;
+    font-size: 20px;
+    background-color: rgb(176, 244, 223);
+
+}
+
+#reset-button {
+    border: 2px solid rgb(28, 107, 86);
+    background-color: rgb(176, 244, 223);
+}
+
+#play-button:hover,
+#reset-button:hover {
+    background-color: #08a363;
+}
+
+.score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.score p {
+    margin: 0;
+}
+
+.win {
+    background: green;
+}
+
+.lose {
+    background: red;
+}

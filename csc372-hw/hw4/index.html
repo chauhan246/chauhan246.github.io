@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!-- 
+Name: Nehabahen Chauhan
+Date: 10.07.2024
+CSC 372-01
+Assignment 4
+
+This is index.html page for Assignment 4-Callbacks-Rock, Paper, Scissors. This 
+index.html page includes images of rock, paper, scissors and linked to css file and js file.
+This assignment includes styles.css and script.js files. 
+This assignmet is about the game: rock paper scissor. Once you open the page computer throw would be
+question mark and result 0. Then user will select their choice and hit the play button.
+once user hit the play button computer choices will suffle 3 sec and and rendomly choose the one choice.
+while suffling it will show in progress and then show it's tie you win or you lose!. It also count
+wins, losses and ties. and there is reset button will reset result and computer choice will be question mark.
+and the you can play again. 
+ -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Assignmet4: Callbacks</title>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Rock Paper Scissors Game. GO!</h1>
+
+        <section>
+            <h2>Your Throw</h2>
+            <div class="user-throws">
+                <img src="/images/rock.png" alt="Rock" class="throw" data-throw="rock">
+                <img src="/images/paper.png" alt="Paper" class="throw" data-throw="paper">
+                <img src="/images/scissors.png" alt="Scissors" class="throw" data-throw="scissors">
+            </div>
+        </section>
+
+        <section class="comp-throw">
+            <h2>Computer Throw</h2>
+            <img src="/images/question-mark.png" alt="Question Mark" id="computer-throw">
+        </section>
+
+        <button id="play-button" disabled>Play</button>
+        <section class="outcome">
+            <h2>Outcome</h2>
+            <span id="result">Make your throw!</span>
+        </section>
+
+        <section class="score">
+            <h2>Results:</h2>
+            <p>Wins: <span id="wins">0</span></p>
+            <p>Losses: <span id="losses">0</span></p>
+            <p>Ties: <span id="ties">0</span></p>
+            <button id="reset-button">Reset</button>
+        </section>
+    </div>
+
+</body>
+
+</html>
