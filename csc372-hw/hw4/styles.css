@@ -7,7 +7,7 @@ body {
 
 .container {
     text-align: center;
-    background-image: url('/images/backg.jpg');
+    background-image: url('images/backg.jpg');
     padding: 50px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }

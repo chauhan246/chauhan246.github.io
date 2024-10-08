@@ -139,7 +139,7 @@ function resetGame() {
     resultEle.textContent = "Make your throw!";
 
     const computerThrowEle = id('computer-throw');
-    computerThrowEle.src = '/images/question-mark.png';
+    computerThrowEle.src = 'images/question-mark.png';
 
 
     allUserThrows.forEach(choice => {
